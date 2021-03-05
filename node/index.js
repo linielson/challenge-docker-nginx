@@ -24,7 +24,7 @@ let list = ''
 connection.query(select, (_err, result, _) => {
   let i
   for (i = 0; i < result.length; i++) {
-    list += '<li>' + result[i] + '</li>'
+    list += '<li>' + result[i].name + '</li>'
   }
 })
 connection.end()
