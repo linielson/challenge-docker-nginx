@@ -4,7 +4,8 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN npm install
+RUN npm install \
+    && npm install -g nodemon
 
 ENV DOCKERIZE_VERSION v0.6.1
 
